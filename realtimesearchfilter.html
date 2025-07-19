@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real-Time-Search-Filter</title>
+    <link rel="icon" href="data:,">
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+         
+        }
+        body{
+            background-color: black;
+            color: white;
+            
+        }
+        .cardcontainer{
+            display: flex;
+            gap: 50px;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            height: 100vh;
+        }
+        .card{
+            position: relative;
+            width: 200px;
+            height: 200px;
+            background-color: aqua;
+            justify-content: center;
+            align-items: center;
+             
+        }
+
+        .card img{
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+        }
+
+
+        .card h3 {
+      position: absolute;
+      top: 130px;
+      left: 10px;
+      color: white;
+     backdrop-filter: blur(8px); /* 🔥 blur effect */
+    background-color: rgba(255, 255, 255, 0.1); /* transparent white */
+      padding: 5px 10px;
+      border-radius: 5px;
+      font-size: 16px;
+        }
+
+        .card p{
+          position: absolute;
+      top: 160px;
+      left: 10px;
+      color: white;
+       backdrop-filter: blur(8px); /* 🔥 blur effect */
+    background-color: rgba(255, 255, 255, 0.1); /* transparent white */
+      padding: 5px 10px;
+      border-radius: 5px;
+      font-size: 16px;
+        }
+
+  #searchInput {
+      width: 100%;
+      padding: 10px;
+      font-size: 18px;
+      background-color: #252525;
+      color: aliceblue;
+      border-radius: 5px;
+      border: none;
+      outline: none;
+    }
+
+
+    </style>
+</head>
+<body>
+    <input type="text" id="searchInput" placeholder="Search people...">
+
+    <div class="cardcontainer">
+        
+        <!-- <div class="card">
+            <img src="https://images.unsplash.com/photo-1622352445868-3f4aa8d2c1f2?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cGVvcGxlJTIwaW1hZ2VzfGVufDB8fDB8fHww">
+          <h3>Dhruv Nagpal</h3>
+          <p>He is a Great Guy</p>
+        </div> -->
+    </div>
+
+    <script src="realtimesearchfilter.js"></script>
+</body>
+</html>
